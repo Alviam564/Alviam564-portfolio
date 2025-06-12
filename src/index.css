@@ -17,3 +17,224 @@ code {
 }
 
 
+.fa, .fab, .fad, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa-linkedin-in:before {
+  content: "\f0e1";
+}
+
+.fa-linkedin {
+  color: #0c61be;
+}
+
+.fa-github:before {
+  content: "\f09b";
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-file-pdf::before {
+  content: "\f1c1";
+}
+
+.fa-file-pdf {
+  color: red;
+}
+
+.fa-adjust:before {
+  content: "\f042";;
+}
+
+.fa-envelope {
+  font-size: 24px;
+  color: white;
+}
+
+.fa-envelope:before{
+  content: "\f0e0";
+}
+
+.fa-close::before {
+  content: "\f00d"; 
+}
+
+.fa-spinner::before {
+  content: "\f110"; 
+}
+
+.fa-spinner {
+ animation: spinner 750ms infinite linear; 
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dark .title,
+.dark section{
+  color: white;
+}
+
+.dark .header_TitleO {
+  color: blue;
+}
+
+.dark .header_TitleBLU,
+.dark .Contact__William {
+  color: #ef644b;
+}
+
+.dark .inner_Contact {
+  box-shadow: 0 20px 80px 0 gray !important;
+}
+
+.dark .inner_Contact_exit {
+  color: #242424;
+}
+
+.dark .inner_Contact--open .inner_Contacts_Side1-about,
+.dark .inner_Contact--open .inner_Contacts_Side2-about {
+  transform: translateX(0%);
+}
+
+.dark .form_submit:hover {
+  background-color: #242424;
+}
+
+.dark .text-purple {
+  color: yellow;
+}
+
+.dark .footer__name {
+  color: green;
+}
+
+.dark .footer__name:hover,
+.dark .Contact__William--yellow:hover{
+  color: #6415ff;
+}
+
+.dark .Contact__William--yellow::after,
+.dark .footer__name::after {
+  background-color: #6415ff;
+}
+
+.dark section {
+  background-color: black;
+}
+
+.dark .project-icon {
+  border-color: white;
+}
+
+.dark .project-icon::after,
+.dark .link__hover-effect--black:after,
+.dark .inner_Contacts_Side1, 
+.dark .inner_Contacts_Side1-about  {
+  background-color: #242424;
+}
+
+.dark .mail-btn {
+  background-color: white;
+  color: #242424;
+}
+
+.dark .fa-github:before,
+.dark .inner_Contacts_Side1-about{
+  color: white;
+}
+
+.dark .fa-envelope,
+.dark .inner_Contacts_Side2-about{
+  color: black;
+}
+
+.dark .footer,
+.dark .project-icon::after,
+.dark .nav__link--anchor-primary--color:hover,
+.dark .inner_Contacts_Side2{
+  background-color: white;
+}
+
+.nav__link--anchor-switch:hover{
+  filter: invert(1);
+}
+
+.link__hover-effect--black:after {
+  background-color: #242424;
+}
+
+.shape-0 {
+  top: 15vh;
+  left: 5vw;
+}
+
+.shape-1 {
+  top: 15vh;
+  left: 50vw;
+}
+
+.shape-2 {
+  top: 15vh;
+  left: 80vw;
+}
+
+.shape-3 {
+  top: 50vh;
+  left: 5vw;
+}
+
+.shape-4 {
+  top: 50vh;
+  left: 50vw;
+}
+
+.shape-5 {
+  top: 50vh;
+  left: 80vw;
+}
+
+.shape-6 {
+  top: 80vh;
+  left: 5vw;
+}
+
+.shape-7 {
+  top: 80vh;
+  left: 50vw;
+}
+
+.shape-8 {
+  top: 80vh;
+  left: 80vw;
+}
+
+.shape Footer {
+  visibility: hidden;
+}
+
+.none {
+  display: none;
+}
+
+.view {
+  display: inline;
+}
+
+
+
