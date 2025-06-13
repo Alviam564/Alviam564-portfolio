@@ -26,7 +26,7 @@ function Background() {
   }, []);
   
   return (
-    <div ref={containerRef} className="w-screen h-screen absolute pointer-events-none dark:bg-black dark:bg-transparent">
+    <div ref={containerRef} className="w-screen h-screen absolute dark:bg-black dark:bg-transparent">
       <img src="/assets/squiggly.svg" className="shape fixed shape-0" alt=''/>
       <img src="/assets/circle.svg" className="shape fixed shape-1" alt=''/>
       <img src="/assets/squiggly.svg" className="shape fixed shape-2" alt=''/>

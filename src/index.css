@@ -16,6 +16,37 @@ code {
     monospace;
 }
 
+.WA_logo, .WA-pic {
+  animation: animate-profile-pic 1000ms 800ms backwards;
+}
+
+@keyframes animate-profile-pic {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+nav {
+  animation: fade-up 650ms 400ms backwards;
+}
+
+@keyframes fade-up {
+  0% {
+  opacity: 0;
+  transform:translateY(40px)
+  }
+  100% {
+    opacity: 1;
+    transform:translateY(0) ;
+  }
+}
+
 
 .fa, .fab, .fad, .fal, .far, .fas {
   -moz-osx-font-smoothing: grayscale;
@@ -25,34 +56,6 @@ code {
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
-}
-
-.fa-linkedin-in:before {
-  content: "\f0e1";
-}
-
-.fa-linkedin {
-  color: #0c61be;
-}
-
-.fa-github:before {
-  content: "\f09b";
-}
-
-.fa-github {
-  color: black;
-}
-
-.fa-file-pdf::before {
-  content: "\f1c1";
-}
-
-.fa-file-pdf {
-  color: red;
-}
-
-.fa-adjust:before {
-  content: "\f042";;
 }
 
 .fa-envelope {
@@ -134,16 +137,11 @@ code {
   background-color: #6415ff;
 }
 
-.dark section {
-  background-color: black;
-}
-
 .dark .project-icon {
   border-color: white;
 }
 
 .dark .project-icon::after,
-.dark .link__hover-effect--black:after,
 .dark .inner_Contacts_Side1, 
 .dark .inner_Contacts_Side1-about  {
   background-color: #242424;
@@ -166,17 +164,20 @@ code {
 
 .dark .footer,
 .dark .project-icon::after,
-.dark .nav__link--anchor-primary--color:hover,
 .dark .inner_Contacts_Side2{
   background-color: white;
 }
 
-.nav__link--anchor-switch:hover{
-  filter: invert(1);
+.aboutme_links{
+  animation: fade-up 650ms 600ms backwards;
 }
 
-.link__hover-effect--black:after {
-  background-color: #242424;
+.intro-pic {
+  border-radius: 50%;
+}
+
+.intro-pic{
+  aspect-ratio: 1/1;
 }
 
 .shape-0 {
