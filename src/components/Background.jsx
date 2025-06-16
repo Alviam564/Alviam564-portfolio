@@ -6,10 +6,10 @@ function Background() {
   useEffect(() => {
     const handleMouseMove = (event) => {
       const scaleFactor = 1 / 20;
-      const shapes = containerRef.current.querySelectorAll(".shape");
       const x = event.clientX * scaleFactor;
       const y = event.clientY * scaleFactor;
-
+      
+      const shapes = document.querySelectorAll(".shape");
       shapes.forEach((shape, i) => {
         const isOdd = i % 2 !== 0;
         const direction = isOdd ? -1 : 1;
@@ -17,16 +17,15 @@ function Background() {
       });
     };
 
-    const container = containerRef.current;
-    container.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
-      container.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
   
-  return (
-    <div ref={containerRef} className="w-screen h-screen absolute dark:bg-black dark:bg-transparent">
+    return (
+    <div className="w-screen h-screen fixed dark:bg-black invisible md:visible pointer">
       <img src="/assets/squiggly.svg" className="shape fixed shape-0" alt=''/>
       <img src="/assets/circle.svg" className="shape fixed shape-1" alt=''/>
       <img src="/assets/squiggly.svg" className="shape fixed shape-2" alt=''/>
