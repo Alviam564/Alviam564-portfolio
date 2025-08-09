@@ -72,6 +72,7 @@ nav {
   animation-range-end: normal;
   animation: scrollmovement 1000ms infinite alternate-reverse
 }
+
 @keyframes scrollmovement {
   0% { transform: translateY(4px);
   }

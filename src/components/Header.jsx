@@ -19,13 +19,13 @@ function Header() {
             Here's a bit more <span className="text-violet-700 dark:yellow font-bold cursor-pointer" onClick={toggleContact}> about me.</span>
           </p>
           <div className="aboutme_link flex gap-3">
-            <a href="https://www.linkedin.com/in/william-alvarez-rodas-b4180136a" target="_blank" className="text-3xl">
+            <a href="https://www.linkedin.com/in/william-alvarez-rodas-b4180136a" target="_blank" rel="noopener noreferrer" className="text-3xl">
               <i className="fab fa-linkedin blue" aria-hidden="true"></i>
             </a> 
-            <a href="https://github.com/Alviam564" target="_blank" className="text-3xl">
+            <a href="https://github.com/Alviam564" target="_blank" rel="noopener noreferrer" className="text-3xl">
               <i className="fab fa-github text-black dark:text-white" aria-hidden="true"></i>
             </a>
-            <a href="/assets/William Alvarez Rodas Resume.pdf" target="_blank" className="text-3xl">
+            <a href="/assets/William Alvarez Rodas Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-3xl">
               <i className="fa fa-file-pdf text-red-600" aria-hidden="true"></i>
             </a>
           </div>
